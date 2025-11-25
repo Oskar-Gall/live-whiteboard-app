@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablica - Oskar Gall</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore-compat.js"></script>
+</head>
+
+<body>
+    <h1>Tablica</h1>
+    <div class="toolbar">
+        <button id="tool-rect" class="tool active" title="Rysuj Prostokąt">⬛</button>
+        <button id="tool-circle" class="tool" title="Koło">⭕</button>
+        <button id="tool-move" class="tool" title="Przesuń">🖐️</button>
+        <button id="tool-delete" class="tool" title="Usuń">❌</button>
+        <input type="color" id="tool-color" title="Wybierz kolor" value="#3498db">
+    </div>
+
+    <canvas id="whiteboard"></canvas>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
